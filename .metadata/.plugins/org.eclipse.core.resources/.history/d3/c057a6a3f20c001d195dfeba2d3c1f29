@@ -1,0 +1,8 @@
+package com.example.learningspring.util;
+
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.ApplicationListener;
+
+public class AppStartupEvent implements ApplicationListener<ApplicationReadyEvent> {
+
+}

@@ -1,0 +1,14 @@
+package com.example.learningspring.business;
+
+import org.springframework.stereotype.Service;
+
+import com.example.learningspring.data.RoomRepository;
+
+@Service
+public class RoomService {
+	private final RoomRepository roomRepository;
+	public RoomService(RoomRepository roomRepository) {
+		this.roomRepository = roomRepository;
+	}
+	
+}

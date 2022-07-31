@@ -1,0 +1,33 @@
+package com.example.learningspring.business;
+
+import java.util.Comparator;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.learningspring.data.Room;
+import com.example.learningspring.data.RoomRepository;
+
+@Service
+public class RoomService {
+	private final RoomRepository roomRepository;
+	public RoomService(RoomRepository roomRepository) {
+		this.roomRepository = roomRepository;
+	}
+	
+	public List<Room> getRooms(){
+		List<Room> rooms = (List<Room>) this.roomRepository.findAll();
+		
+		rooms.forEach(new Comparator<Room>() {
+
+			@Override
+			public int compare(Room o1, Room o2) {
+				// TODO Auto-generated method stub
+				return o1.getRoomNumber().compareTo(o2.getRoomNumber());
+			}
+			
+		});
+		
+		return (List<Room>) roomRepository.findAll();
+	}
+}

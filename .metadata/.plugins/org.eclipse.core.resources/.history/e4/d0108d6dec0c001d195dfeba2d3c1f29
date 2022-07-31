@@ -1,0 +1,5 @@
+package com.example.learningspring.data;
+
+public interface RoomRepository {
+
+}
