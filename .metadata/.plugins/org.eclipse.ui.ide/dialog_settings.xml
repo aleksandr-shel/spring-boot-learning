@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Programming\spring-boot-learning\explorecali"/>
+			<item value="C:\Programming\spring-boot-learning\learning-spring"/>
 			<item value="C:\Programming\LinkedIn Learning Java Spring Boot\learning-spring"/>
 		</list>
 	</section>

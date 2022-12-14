@@ -1,6 +1,0 @@
-package com.example.learningspring.data;
-
-
-public interface ReservationRepository {
-
-}
