@@ -8013,3 +8013,51 @@ Caused by: java.io.IOException: ???? ???????? ??????
 	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
 	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-14 10:55:38.236
+!MESSAGE executing callback sts4.classpath.DRrNVkhq FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-14 10:55:38.239
+!MESSAGE executing callback sts4.classpath.GlmjjQQC FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-14 10:55:38.242
+!MESSAGE executing callback sts4.classpath.cpULltSm FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-12-14 10:55:38.244
+!MESSAGE executing callback sts4.classpath.TdjtqIHp FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-12-14 10:55:38.246
+!MESSAGE No language server has registered to handle command 'sts4.classpath.cpULltSm'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.cpULltSm'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:177)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:148)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-12-14 10:55:38.248
+!MESSAGE No language server has registered to handle command 'sts4.classpath.GlmjjQQC'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.GlmjjQQC'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:177)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:148)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-12-14 10:55:38.250
+!MESSAGE No language server has registered to handle command 'sts4.classpath.DRrNVkhq'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.DRrNVkhq'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:177)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:148)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-12-14 10:55:38.252
+!MESSAGE No language server has registered to handle command 'sts4.classpath.TdjtqIHp'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.TdjtqIHp'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:177)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:148)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
