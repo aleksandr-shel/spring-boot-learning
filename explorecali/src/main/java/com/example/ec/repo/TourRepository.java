@@ -1,12 +1,17 @@
 package com.example.ec.repo;
 
+import java.util.List;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RestResource;
 
+import com.example.ec.domain.Difficulty;
+import com.example.ec.domain.Region;
 import com.example.ec.domain.Tour;
 
 
@@ -19,6 +24,17 @@ public interface TourRepository extends CrudRepository<Tour, Integer>, PagingAnd
 	//Pageable method returns Page and has pageable parameter
 	Page<Tour> findByTourPackageCode(@Param("code")String code, Pageable pageable);
 
+	//this
+	@Query("Select t from Tour t where t.tourPackage.code = ?1 " +
+	"and t.difficulty = ?2 and t.region = ?3 and t.price <= ?4")
+	List<Tour> lookupTour(String code, Difficulty difficulty, Region region,
+			Integer maxPrice);
+	
+	//same as
+	List<Tour> findByTourPackageCodeAndDifficultyAndRegionAndPriceLessThan(
+			String code, Difficulty difficulty, Region region,
+			Integer maxPrice);
+	
 //	@Override
 //	@RestResource(exported=false)
 	//RestResource controlling API exposure,

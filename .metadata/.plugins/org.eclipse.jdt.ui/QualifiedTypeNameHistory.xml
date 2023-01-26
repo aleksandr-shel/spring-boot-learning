@@ -10,11 +10,11 @@
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
-    <fullyQualifiedTypeName name="com.example.ec.domain.Region"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="com.example.ec.web.RatingDto"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
     <fullyQualifiedTypeName name="org.springframework.data.domain.PageImpl"/>
+    <fullyQualifiedTypeName name="com.example.ec.domain.Region"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
